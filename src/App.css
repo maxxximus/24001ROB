@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color:blanchedalmond;
+  background-color:rgba(235, 174, 62, 0.986);
   margin: 0 auto;
   
 display: flex;
@@ -15,8 +15,8 @@ font-size: calc(10px + 2vmin);
 
 
 #left{
-  background-color: blanchedalmond;
-  width: 40%;
+ 
+  width: 35%;
 
   height: 100vh;
  
@@ -24,10 +24,14 @@ font-size: calc(10px + 2vmin);
  
 }
 #right{
-  background-color:blanchedalmond;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   border: 1px solid grey;
 
-  width:60%;
+  width:65%;
   height: 100vh;
   grid-area: right;
 }

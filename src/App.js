@@ -4,7 +4,7 @@ import './App.css';
 import Details from './Model/Details';
 import { useState, useEffect } from 'react';
 import Term from './Components/Term';
-import Details1 from './Components/Article';
+import Article from './Components/Article';
 import Question from './Model/Question';
 
 function App() {
@@ -23,12 +23,13 @@ function App() {
     new Question("what", ["1","2","3"], "4")),
     new Details("hooks", "full description5", "image src", new Question("what", ["1","2","3"], "4")),
     new Details("react", "full description6", "image src", new Question("what", ["1","2","3"], "4")),
-    new Details("hash", "full description7", "image src" , new Question("what", ["1","2","3"], "4")),
+    new Details("hash", "full description7", "image src" , new Question("what is hash", ["1","2","3"], "mix")),
   ])
 
+
+  
   const [current, setCurrent] = useState(0)
 
-  console.log(glossary);
 
   function CallBack (index){
 
@@ -57,7 +58,7 @@ setCurrent(index)
      <div id="right">
 
     
-              <Details1 label={glossary[current]}  />
+              <Article label={glossary[current]}  />
            
             
         

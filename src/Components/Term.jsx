@@ -1,12 +1,9 @@
-import { useState } from "react";
+
 
 
 function Term(props) {
-const [desc, setDesc]= useState("")
-const [current, setCurrent] = useState({})
-const [showResults, setShowResults] = useState(false)
-const onClick = () => setShowResults(true)
 
+// parent - App.js
 
 
   return (<>
