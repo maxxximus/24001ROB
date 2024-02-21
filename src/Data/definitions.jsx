@@ -17,7 +17,7 @@ const def = [
         "variable",
         `Variables are Containers for Storing Data. JavaScript Variables can be declared using var, let and const`,
         "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2X5JdJr-mR62llsnX2VrzA.png",
-        new Question("How would you declare a constant called foo", ["1", "2", "3"], `const firstname="const foo"`)
+        new Question("How would you declare a constant called foo", ["1", "2", "3"], "const foo")
       ),
       new Details(
         "props",
