@@ -1,0 +1,100 @@
+#details{
+
+  
+    color: black;
+}
+
+
+p{
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 5px auto;
+}
+button{
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+button:hover{
+ cursor: pointer;
+ background-color: gainsboro;
+}
+
+#article{
+display: grid;
+grid-template-areas: "t ." "d i" ". q";
+vertical-align: top;
+grid-template-columns: 40% 60%;
+}
+#term{
+    grid-area:t ;
+  margin-right: 10px;
+}
+#quiz{
+    grid-area: q;
+    padding: 10px;
+    margin-top: 10px;
+
+    background-color: #4232321f;
+    margin: 30px;
+    border-radius: 10px ;
+
+}
+#image{
+    grid-area: i;
+    width: 90%;
+    text-align: center;
+    margin: 5px auto;
+    filter: drop-shadow(rgb(94, 86, 86) 0.8rem 1rem 10px);
+
+}
+#def{
+    grid-area: d;
+    text-align: justify;
+    text-justify:distribute;
+    
+}
+.bold{
+    font-weight: 700;
+}
+
+/* ----- flip card ---------------- */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }

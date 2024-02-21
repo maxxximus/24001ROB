@@ -1,49 +1,39 @@
 .App {
   text-align: center;
-  background-color:rgba(235, 174, 62, 0.986);
+  background-color: rgba(235, 174, 62, 0.986);
+  border-radius: 15px;
   margin: 0 auto;
-  
-display: flex;
-width: 95%;
-
-
-font-size: calc(10px + 2vmin);
-
-
-}
-
-
-
-#left{
- 
-  width: 35%;
-
-  height: 100vh;
- 
-  grid-area: left;
- 
-}
-#right{
 
   display: flex;
+  width: 95%;
+
+  font-size: calc(10px + 2vmin);
+}
+
+#left {
+  width: 30%;
+
+  height: 100vh;
+
+  grid-area: left;
+}
+#right {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
 
-  border: 1px solid grey;
+  border-left: 10px solid rgba(153, 147, 147, 0.142);
 
-  width:65%;
+  width: 70%;
   height: 100vh;
   grid-area: right;
 }
-.butt{
+.butt {
   width: 100%;
   height: 50px;
   margin: 2px;
- 
- 
 }
-#child{
+#child {
   height: 299px;
   width: 299px;
-  background-color:cadetblue;
+  background-color: cadetblue;
 }
