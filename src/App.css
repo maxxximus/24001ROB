@@ -37,3 +37,14 @@
   width: 299px;
   background-color: cadetblue;
 }
+#search{
+  width: 50%;
+  margin: 0;
+}
+.searchform{
+ 
+  background-color: #4232321f;
+
+
+ height:70px;
+}

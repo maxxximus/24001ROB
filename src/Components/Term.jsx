@@ -8,7 +8,7 @@ function Term(props) {
 
   return (<>
 
-<button  onClick={()=>{props.action(props.keyno)}}  id={props.keyno} className='butt'>{props.label}</button>
+<button key={props.keyno}  onClick={()=>{props.action(props.keyno)}} className='butt'>{props.label}</button>
 
 </>
   );
