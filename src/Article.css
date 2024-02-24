@@ -25,6 +25,12 @@ display: grid;
 grid-template-areas: "t ." "d i" ". q";
 vertical-align: top;
 grid-template-columns: 40% 60%;
+animation: fadein 3s;
+-moz-animation: fadein 3s; /* Firefox */
+-webkit-animation: fadein 3s; /* Safari and Chrome */
+-o-animation: fadein 3s; /* Opera */
+
+
 }
 #term{
     grid-area:t ;
@@ -34,11 +40,16 @@ grid-template-columns: 40% 60%;
     grid-area: q;
     padding: 10px;
     margin-top: 10px;
+    
 
     background-color: #4232321f;
     margin: 30px;
     border-radius: 10px ;
 
+}
+
+#quiz input{
+  width: 50%;
 }
 #image{
     grid-area: i;
@@ -98,3 +109,38 @@ grid-template-columns: 40% 60%;
     color: white;
     transform: rotateY(180deg);
   }
+
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

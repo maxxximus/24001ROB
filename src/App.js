@@ -9,7 +9,7 @@ import Search from "./Components/Search";
 function App() {
   const [glossary, setGlossary] = useState(def);
 
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(-1);  // initial current set to -1 to render intro page
 
   const [answer1, setAnswer1] = useState(""); // becomes submitted answer
   const [input1, setInput1] = useState(""); // updates on enrt of text input
@@ -49,7 +49,7 @@ function App() {
   // }
 
   /**
-   * used as callback/setter for setCurrent from <Term /> component..
+   * used as callback/setter for setCurrent from <Term /> component
    * @param {number} index
    */
   function CallBack(index) {
@@ -73,8 +73,12 @@ function App() {
           return <Term keyno={index} action={CallBack} label={option.term} />;
         })}
       </div>
+
+
+{/* Right side - definitions page/ Article.jsx */}
+
       <div id="right">
-        <Article label={glossary[current]} />
+        <Article label={glossary[current]} currentpage={current} fulldef={glossary} />
       </div>
     </div>
   );

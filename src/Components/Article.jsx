@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import '../Article.css';
+import image from "../logo.svg"
 
 
 function Article(props) {
@@ -38,7 +39,11 @@ function Article(props) {
 
 
   return (
-  <div id="article" >
+  <>
+
+    {props.currentpage > -1 ? // initial startup article is not rendered 
+    
+    <div id="article" >
   
     <h3 id="term">{props.label.term.toUpperCase()}</h3><div></div>
     <p id ="def"><span className='bold'>Definition: </span>{props.label.description}</p>
@@ -82,7 +87,23 @@ function Article(props) {
      </div>
 
 </div >
-  );
+    :
+    // Welcome screen on initial startup
+    <div id="intro" >
+      <h1>Welcome to REACT glossary</h1>
+     
+      <img className="App-logo" src={image} />
+      {/* {props.fulldef.map((option, index) => {
+          return <h3 className="words">{option.term}</h3>;
+
+          
+        })}
+    
+     */}
+    </div>
+    }
+
+    </>  );
 }
 
 export default Article;

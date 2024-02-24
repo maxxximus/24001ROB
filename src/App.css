@@ -48,3 +48,44 @@
 
  height:70px;
 }
+
+
+
+
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  
+  filter: drop-shadow(16px 18px 10px);
+
+}
+
+.App-logo:hover{
+  height: 40vmin;
+  transform: scale(0.9);
+cursor: pointer;
+filter: drop-shadow(2px 2px 0px);
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

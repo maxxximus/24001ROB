@@ -18,6 +18,7 @@ function Search(props) {
        
         <input
           type="text"
+          id = "search"
           placeholder="Search definitions"
           value={props.input1}
           onChange={(e) => props.actionInput(e.target.value)}
